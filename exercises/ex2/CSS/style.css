@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer, nav, aside, section, div {
+    display: block;
+}
+
+body{
+    background-color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {text-decoration: none;}
+
+#wrapper{
+    margin: 0px 125px;
+}
+
+p, span{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+}
+header{
+    width: 100%;
+    margin-top: 15px;
+}
+
+#logo{
+    background-image: url("../images/batman.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 41px;
+    display: block;
+}
+
+#logo span{
+    align-items: center;
+    padding-left: 110px;
+    font-weight: bold;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+nav {
+    margin-top: 26px;
+    margin-bottom: 78px;
+}
+
+nav a {
+    font-weight: 400;
+    color: #1F1534;
+    opacity: 0.5;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-right: 41px;
+}
+
+h1{
+    padding-top: 202px;
+    padding-left: 50px;
+    font-size: 42px;
+    line-height: 53px;
+}
+
+#main_photo{
+    padding-top: 14px;
+    width:550.46px;
+    height: 475px;
+}
+
+#first-section{
+    padding-top: 63px;
+}
+
+#sec-section{
+    padding-top: 100px;
+}
+
+.learn-button{
+    margin: 15px;
+    width: 200px;
+    height: 56px;
+    border: 1.4px solid #458FF6;
+    box-sizing: border-box;
+    background: #458FF6;
+    border-radius: 55px;
+}
+
+.learn-button2{
+    margin-top: 30px;
+    width: 200px;
+    height: 56px;
+    border: 1.4px solid #458FF6;
+    box-sizing: border-box;
+    background: #ffffff;
+    border-radius: 55px;
+
+}
+
+.learn-button2 p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 60px;
+    color: #458FF6;
+    mix-blend-mode: normal;
+    width: 700px;
+    padding-left: 50PX;
+}
+
+.learn-button p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 60px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    width: 700px;
+    padding-left: 50PX;
+}
+
+.Features{
+    width: 1120px;
+    height: 745px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+
+.Features > div {
+    width: 350px;
+    height: 354px;
+
+    background: #FFFFFF;
+/* drop shadow */
+
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+}
+
+.Features > div > img {
+    width:70%;
+    height: 70%;
+}
+.Features > div > span {
+    display: block;
+}
+
+footer{
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    width:1600px;
+    height: 425px;
+    padding-top: 50px;
+}
+
+footer section a{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 60px;
+    color: #FFFFFF;
+    padding-left: 25px;
+}
+footer a{
+    padding-top: 182.9px;
+}
+
+.finish{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding-bottom: 50px;
+    padding-left: 25px;
+}
+
+footer span{
+    padding-left: 25px;
+}
