@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Oren Berkovich</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <script>
+        window.onload = function(event) {
+            const sqrNum = Math.floor(Math.random() * 37 + 16);
+            const grid = document.getElementsByClassName('middle-area')[0];
+            for (let i = 0; i < sqrNum; i++) {
+                let bx = document.createElement('div');
+                bx.className = 'square-box';
+                for (let j = 3; j > -1; j--) {
+                    let sqr = document.createElement('div');
+                    sqr.className = 'square';
+                    let opacity = (j) / 4;
+                    sqr.style = 'opacity: ' + opacity + ';';
+                    grid.append(sqr);
+                }
+                grid.append(bx);
+            }
+        };
+        document.getElementsByClassName('square').addEventListener('click', function onClick(event) {
+            let prev = document.body.style.background;
+            if (document.body.style.background = !"#3e8e41")
+                document.body.style.background = "#3e8e41";
+            else
+                document.body.style.background = prev;
+        });
+        const plusBtn = document.getElementsByClassName('plus-btn');
+        plusBtn.onClick = function() {
+            for (var i = 0; i < 5; i++) {
+                const button = document.createElement("button");
+                button.innerText = i;
+                button.addEventListener("click", function() {
+                    console.log(i)
+                })
+                plusBtn.appendChild(button);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper-grid1">
+        <div class="plus-header">
+            <div class="logo"></div>
+            <div class="plus-btn">
+                +
+            </div>
+            <ul class="nav-list2">
+                <li class="nav-item1"><a href="index.html">Layout 1</a></li>
+                <li class="nav-item1"><a href="layout2.html">Layout 2</a></li>
+                <li class="nav-item1 active"><a href="layout3.html">Layout 3</a></li>
+            </ul>
+        </div>
+        <div style="--i: 3;" class="square square-static" media="(max-width: 768px)"></div>
+        <div style="--i: 2;" class="square square-static" media="(max-width: 768px)"></div>
+        <div style="--i: 1;" class="square square-static" media="(max-width: 768px)"></div>
+        <div style="--i: 0;" class="square square-static" media="(max-width: 768px)"></div>
+    </div>
+    <div class="middle-area"></div>
+    <footer class="footer1"></footer>
+</body>
+
+</html>

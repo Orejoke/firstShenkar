@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Oren Berkovich</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <form action="http://se.shenkar.ac.il/teach/web1/get_form3.php" method="GET">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName1" name="fullName" placeholder="Full Name *"><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password1" name="pass" placeholder="Password *"><br>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail1" name="mail" placeholder="Email *"><br>
+        <label for="website">Website:</label>
+        <input type="url" id="website1" name="website" placeholder="Website"><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone1" name="phone" placeholder="Phone"><br>
+        <label for="coffee">Coffee:</label>
+        <input type="number" id="coffee1" name="coffee" placeholder="Coffee"><br>
+        <label for="temperature">Temperature:</label>
+        <input type="range" name="temper" id="temp1" placeholder="Temperature"><br>
+        <label for="address">Address:</label>
+        <textarea name="address" id="address1" cols="30" rows="2" placeholder="Type here"></textarea><br>
+
+        <span>Intrests:</span>
+        <label for="reading">Reading Books</label>
+        <input type="checkbox" name="interests[]" value="Reading Books">
+        <label for="children">Children</label>
+        <input type="checkbox" name="interests[]" value="Reading Books">
+        <label for="sleeping">Sleeping</label>
+        <input type="checkbox" name="interests[]" value="Reading Books">
+        <label for="coding">Coding</label>
+        <input type="checkbox" name="interests[]" value="coding">
+        <label for="cleaning">Cleaning</label>
+        <input type="checkbox" name="intrests[]" value="cleaning">
+        <br>
+
+        <span>Gender:</span>
+        <label for="male">male</label>
+        <input type="radio" name="gender" value="male">
+        <label for="fenale">female</label>
+        <input type="radio" name="gender" value="female">
+        <br>
+
+        <label>Age:<select name="age">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    </select>
+                </label><br>
+        <input id="submit-button" type="submit" value="Send">
+    </form>
+</body>
+
+</html>
